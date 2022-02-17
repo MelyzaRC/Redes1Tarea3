@@ -172,7 +172,7 @@
                 "properties": {
                     "interfaces": [
                         {
-                            "name": "Ethernet 2",
+                            "name": "Conexi\u00f3n de \u00e1rea local",
                             "special": false,
                             "type": "ethernet"
                         },
@@ -182,7 +182,7 @@
                             "type": "ethernet"
                         },
                         {
-                            "name": "Ethernet",
+                            "name": "Conexi\u00f3n de red Bluetooth",
                             "special": false,
                             "type": "ethernet"
                         },
@@ -192,12 +192,7 @@
                             "type": "ethernet"
                         },
                         {
-                            "name": "VMware Network Adapter VMnet8",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "name": "Conexi\u00f3n de \u00e1rea local 2",
                             "special": false,
                             "type": "ethernet"
                         }
@@ -266,7 +261,7 @@
                 "properties": {
                     "interfaces": [
                         {
-                            "name": "Ethernet 2",
+                            "name": "Conexi\u00f3n de \u00e1rea local",
                             "special": false,
                             "type": "ethernet"
                         },
@@ -276,7 +271,7 @@
                             "type": "ethernet"
                         },
                         {
-                            "name": "Ethernet",
+                            "name": "Conexi\u00f3n de red Bluetooth",
                             "special": false,
                             "type": "ethernet"
                         },
@@ -286,12 +281,7 @@
                             "type": "ethernet"
                         },
                         {
-                            "name": "VMware Network Adapter VMnet8",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "name": "Conexi\u00f3n de \u00e1rea local 2",
                             "special": false,
                             "type": "ethernet"
                         }
@@ -360,7 +350,7 @@
                 "properties": {
                     "interfaces": [
                         {
-                            "name": "Ethernet 2",
+                            "name": "Conexi\u00f3n de \u00e1rea local",
                             "special": false,
                             "type": "ethernet"
                         },
@@ -370,7 +360,7 @@
                             "type": "ethernet"
                         },
                         {
-                            "name": "Ethernet",
+                            "name": "Conexi\u00f3n de red Bluetooth",
                             "special": false,
                             "type": "ethernet"
                         },
@@ -380,12 +370,7 @@
                             "type": "ethernet"
                         },
                         {
-                            "name": "VMware Network Adapter VMnet8",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "name": "Conexi\u00f3n de \u00e1rea local 2",
                             "special": false,
                             "type": "ethernet"
                         }
@@ -544,5 +529,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.29",
-    "zoom": 100
+    "zoom": 84
 }
