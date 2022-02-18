@@ -16,10 +16,10 @@ Integrantes:
 
 | Nombre                               | Carnet    | Estudiante* |
 | ------------------------------------ | --------- | ----------- |
-| <img src="https://image.flaticon.com/icons/png/512/878/878719.png" alt="drawing" width="20"> &nbsp; Josué Alfredo González Caal          | 201602489 | 1 |
-| <img src="https://image.flaticon.com/icons/png/512/878/878719.png" alt="drawing" width="20"> &nbsp;Jimmy Yorbany Noriega Chávez          | 200915691 | 2 |
-| <img src="https://image.flaticon.com/icons/png/512/878/878719.png" alt="drawing" width="20"> &nbsp; Melyza Alejandra Rodríguez Contreras | 201314821 | 3 |
-| <img src="https://image.flaticon.com/icons/png/512/878/878719.png" alt="drawing" width="20"> &nbsp; Romael Isaac Pérez Godinez           | 201213545 | 4 |
+| <img src="/Practica1/imagenes/icon.png" alt="icon_m" width="25"> &nbsp; Josué Alfredo González Caal          | 201602489 | 1 |
+| <img src="/Practica1/imagenes/icon.png" alt="icon_m" width="25"> &nbsp;Jimmy Yorbany Noriega Chávez          | 200915691 | 2 |
+| <img src="/Practica1/imagenes/icon.png" alt="icon_m" width="25"> &nbsp; Melyza Alejandra Rodríguez Contreras | 201314821 | 3 |
+| <img src="/Practica1/imagenes/icon.png" alt="icon_m" width="25"> &nbsp; Romael Isaac Pérez Godinez           | 201213545 | 4 |
 
 > \* ***Nota:*** El campo **Estudiante**, identifica al miembro del grupo en el presente documento. 
 
@@ -115,6 +115,8 @@ Se realizaron las siguientes configuraciones, por ejemplo, entre el **Estudiante
 Cada uno de los integrantes del grupo realizó esta configuración apuntando hacia el resto de sus compañeros. A continuación, se muestra el resultado de las topologías implementadas en **GNS3**.
 
 - **Estudiante 1**
+
+![CE1](/Practica1/imagenes/cloude1.jpg "Cloud estudiante 1")
 
 - **Estudiante 2**
 
