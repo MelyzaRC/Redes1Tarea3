@@ -4,13 +4,13 @@
     "auto_start": false,
     "drawing_grid_size": 25,
     "grid_size": 75,
-    "name": "practica1Redes",
-    "project_id": "452a7861-02b9-4bde-8342-f7f7c9f173f0",
+    "name": "practica1_200915691",
+    "project_id": "217aef06-fc09-4ecb-a9bf-0275fe6633ce",
     "revision": 9,
     "scene_height": 1000,
     "scene_width": 2000,
     "show_grid": false,
-    "show_interface_labels": false,
+    "show_interface_labels": true,
     "show_layers": false,
     "snap_to_grid": false,
     "supplier": null,
@@ -20,7 +20,7 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "9b285f4f-edf6-4d0c-b7ff-d22f3a81b726",
+                "link_id": "cf2fd7b6-b3d5-4ff0-b008-3e078c65bc3a",
                 "link_style": {},
                 "nodes": [
                     {
@@ -30,9 +30,9 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
                             "x": -7,
-                            "y": 60
+                            "y": 25
                         },
-                        "node_id": "1e8d60ff-07a1-42c4-b0f3-7d8f75b4514d",
+                        "node_id": "5eb1cff6-2534-457a-b1c1-31b4ae2c5c8c",
                         "port_number": 0
                     },
                     {
@@ -41,10 +41,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 67,
-                            "y": -8
+                            "x": 75,
+                            "y": 20
                         },
-                        "node_id": "33592eda-8ca1-4e9f-9e7d-eecc0da29d54",
+                        "node_id": "f584b733-4b3b-4033-aca9-a1e64a335e22",
                         "port_number": 0
                     }
                 ],
@@ -52,39 +52,7 @@
             },
             {
                 "filters": {},
-                "link_id": "db846863-5f80-43a7-b073-c6fddd2f063c",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e1",
-                            "x": -4,
-                            "y": 20
-                        },
-                        "node_id": "33592eda-8ca1-4e9f-9e7d-eecc0da29d54",
-                        "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "UDP tunnel 1",
-                            "x": 168,
-                            "y": 23
-                        },
-                        "node_id": "c726d0b5-43cc-4d2c-bb33-2e8d5526ed8e",
-                        "port_number": 3
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "9b14c6fe-7065-47da-a7a9-55e388c87c3f",
+                "link_id": "6286084c-1cb0-4a1b-b8f2-6783b78d0a9d",
                 "link_style": {},
                 "nodes": [
                     {
@@ -94,9 +62,73 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "UDP tunnel 1",
                             "x": 159,
-                            "y": 38
+                            "y": 33
                         },
-                        "node_id": "24cad403-b736-4b5b-b411-fec43429e942",
+                        "node_id": "f554fea4-c720-4899-b88e-d008c76d354d",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e2",
+                            "x": -4,
+                            "y": 16
+                        },
+                        "node_id": "f584b733-4b3b-4033-aca9-a1e64a335e22",
+                        "port_number": 2
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "196e7cd7-9b01-48b3-8b58-452040332a58",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "UDP tunnel 1",
+                            "x": 164,
+                            "y": 63
+                        },
+                        "node_id": "30a672a8-3e57-4f61-a248-f843942c19aa",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1",
+                            "x": -2,
+                            "y": 3
+                        },
+                        "node_id": "f584b733-4b3b-4033-aca9-a1e64a335e22",
+                        "port_number": 1
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "8b8805ae-d69e-4ab5-8e81-0910930b89e6",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "UDP tunnel 1",
+                            "x": 150,
+                            "y": -1
+                        },
+                        "node_id": "8c814972-75d0-459b-819c-ca502312288e",
                         "port_number": 3
                     },
                     {
@@ -105,42 +137,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e3",
-                            "x": -4,
-                            "y": 14
-                        },
-                        "node_id": "33592eda-8ca1-4e9f-9e7d-eecc0da29d54",
-                        "port_number": 3
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "44283d69-39b2-4ab8-8378-826bb7fee4d9",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e2",
                             "x": 0,
-                            "y": 32
+                            "y": 34
                         },
-                        "node_id": "33592eda-8ca1-4e9f-9e7d-eecc0da29d54",
-                        "port_number": 2
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "UDP tunnel 1",
-                            "x": 161,
-                            "y": -3
-                        },
-                        "node_id": "15a8e696-eac0-4391-a35c-1989c07c0b67",
+                        "node_id": "f584b733-4b3b-4033-aca9-a1e64a335e22",
                         "port_number": 3
                     }
                 ],
@@ -150,7 +150,318 @@
         "nodes": [
             {
                 "compute_id": "local",
-                "console": 5005,
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Cloud_melyza",
+                    "x": 15,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "Cloud_melyza",
+                "node_id": "30a672a8-3e57-4f61-a248-f843942c19aa",
+                "node_type": "cloud",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "interfaces": [
+                        {
+                            "name": "Wi-Fi",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Ethernet",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Conexi\u00f3n de red Bluetooth",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "VMware Network Adapter VMnet1",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "VMware Network Adapter VMnet8",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "special": false,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "ports_mapping": [
+                        {
+                            "interface": "Ethernet 2",
+                            "name": "Ethernet 2",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "Ethernet",
+                            "name": "Ethernet",
+                            "port_number": 1,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "Conexi\u00f3n de \u00e1rea local",
+                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "port_number": 2,
+                            "type": "ethernet"
+                        },
+                        {
+                            "lport": 50001,
+                            "name": "UDP tunnel 1",
+                            "port_number": 3,
+                            "rhost": "10.8.0.2",
+                            "rport": 40001,
+                            "type": "udp"
+                        }
+                    ],
+                    "remote_console_host": "",
+                    "remote_console_http_path": "/",
+                    "remote_console_port": 23,
+                    "remote_console_type": "none"
+                },
+                "symbol": ":/symbols/cloud.svg",
+                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+                "width": 159,
+                "x": -386,
+                "y": -283,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Cloud_Romael",
+                    "x": 13,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "Cloud_Romael",
+                "node_id": "f554fea4-c720-4899-b88e-d008c76d354d",
+                "node_type": "cloud",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "interfaces": [
+                        {
+                            "name": "Wi-Fi",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Ethernet",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Conexi\u00f3n de red Bluetooth",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "VMware Network Adapter VMnet1",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "VMware Network Adapter VMnet8",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "special": false,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "ports_mapping": [
+                        {
+                            "interface": "Ethernet 2",
+                            "name": "Ethernet 2",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "Ethernet",
+                            "name": "Ethernet",
+                            "port_number": 1,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "Conexi\u00f3n de \u00e1rea local",
+                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "port_number": 2,
+                            "type": "ethernet"
+                        },
+                        {
+                            "lport": 40000,
+                            "name": "UDP tunnel 1",
+                            "port_number": 3,
+                            "rhost": "10.8.0.4",
+                            "rport": 50000,
+                            "type": "udp"
+                        }
+                    ],
+                    "remote_console_host": "",
+                    "remote_console_http_path": "/",
+                    "remote_console_port": 23,
+                    "remote_console_type": "none"
+                },
+                "symbol": ":/symbols/cloud.svg",
+                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+                "width": 159,
+                "x": -401,
+                "y": -128,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Cloud_Josue",
+                    "x": 20,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "Cloud_Josue",
+                "node_id": "8c814972-75d0-459b-819c-ca502312288e",
+                "node_type": "cloud",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "interfaces": [
+                        {
+                            "name": "Wi-Fi",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Ethernet",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Conexi\u00f3n de red Bluetooth",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "VMware Network Adapter VMnet1",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "VMware Network Adapter VMnet8",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "special": false,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "ports_mapping": [
+                        {
+                            "interface": "Ethernet 2",
+                            "name": "Ethernet 2",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "Ethernet",
+                            "name": "Ethernet",
+                            "port_number": 1,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "Conexi\u00f3n de \u00e1rea local",
+                            "name": "Conexi\u00f3n de \u00e1rea local",
+                            "port_number": 2,
+                            "type": "ethernet"
+                        },
+                        {
+                            "lport": 40002,
+                            "name": "UDP tunnel 1",
+                            "port_number": 3,
+                            "rhost": "10.8.0.5",
+                            "rport": 50002,
+                            "type": "udp"
+                        }
+                    ],
+                    "remote_console_host": "",
+                    "remote_console_http_path": "/",
+                    "remote_console_port": 23,
+                    "remote_console_type": "none"
+                },
+                "symbol": ":/symbols/cloud.svg",
+                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+                "width": 159,
+                "x": -374,
+                "y": 86,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5009,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC_Jimmy",
+                    "x": -16,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC_Jimmy",
+                "node_id": "5eb1cff6-2534-457a-b1c1-31b4ae2c5c8c",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 427,
+                "y": -132,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5011,
                 "console_auto_start": false,
                 "console_type": "none",
                 "custom_adapters": [],
@@ -160,12 +471,12 @@
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "Switch1",
-                    "x": 6,
+                    "x": -3,
                     "y": -25
                 },
                 "locked": false,
                 "name": "Switch1",
-                "node_id": "33592eda-8ca1-4e9f-9e7d-eecc0da29d54",
+                "node_id": "f584b733-4b3b-4033-aca9-a1e64a335e22",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -178,6 +489,7 @@
                             "vlan": 1
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet1",
                             "port_number": 1,
                             "type": "access",
@@ -224,304 +536,8 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": 56,
-                "y": -13,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": null,
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 71,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Cloud_Romael",
-                    "x": 30,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Cloud_Romael",
-                "node_id": "24cad403-b736-4b5b-b411-fec43429e942",
-                "node_type": "cloud",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "interfaces": [
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Wi-Fi",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de red Bluetooth",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "VMware Network Adapter VMnet1",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local 2",
-                            "special": false,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "ports_mapping": [
-                        {
-                            "interface": "Conexi\u00f3n de \u00e1rea local",
-                            "name": "Conexi\u00f3n de \u00e1rea local",
-                            "port_number": 0,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Conexi\u00f3n de red Bluetooth",
-                            "name": "Conexi\u00f3n de red Bluetooth",
-                            "port_number": 1,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Conexi\u00f3n de \u00e1rea local 2",
-                            "name": "Conexi\u00f3n de \u00e1rea local 2",
-                            "port_number": 2,
-                            "type": "ethernet"
-                        },
-                        {
-                            "lport": 25000,
-                            "name": "UDP tunnel 1",
-                            "port_number": 3,
-                            "rhost": "10.8.0.4",
-                            "rport": 35000,
-                            "type": "udp"
-                        }
-                    ],
-                    "remote_console_host": "",
-                    "remote_console_http_path": "/",
-                    "remote_console_port": 23,
-                    "remote_console_type": "none"
-                },
-                "symbol": ":/symbols/cloud.svg",
-                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
-                "width": 159,
-                "x": -338,
-                "y": -62,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": null,
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 71,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Cloud_Jimmy",
-                    "x": 34,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Cloud_Jimmy",
-                "node_id": "c726d0b5-43cc-4d2c-bb33-2e8d5526ed8e",
-                "node_type": "cloud",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "interfaces": [
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Wi-Fi",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de red Bluetooth",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "VMware Network Adapter VMnet1",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local 2",
-                            "special": false,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "ports_mapping": [
-                        {
-                            "interface": "Conexi\u00f3n de \u00e1rea local",
-                            "name": "Conexi\u00f3n de \u00e1rea local",
-                            "port_number": 0,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Conexi\u00f3n de red Bluetooth",
-                            "name": "Conexi\u00f3n de red Bluetooth",
-                            "port_number": 1,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Conexi\u00f3n de \u00e1rea local 2",
-                            "name": "Conexi\u00f3n de \u00e1rea local 2",
-                            "port_number": 2,
-                            "type": "ethernet"
-                        },
-                        {
-                            "lport": 20000,
-                            "name": "UDP tunnel 1",
-                            "port_number": 3,
-                            "rhost": "10.8.0.3",
-                            "rport": 30000,
-                            "type": "udp"
-                        }
-                    ],
-                    "remote_console_host": "",
-                    "remote_console_http_path": "/",
-                    "remote_console_port": 23,
-                    "remote_console_type": "none"
-                },
-                "symbol": ":/symbols/cloud.svg",
-                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
-                "width": 159,
-                "x": -106,
-                "y": -163,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": null,
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 71,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Cloud_Josue",
-                    "x": 35,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Cloud_Josue",
-                "node_id": "15a8e696-eac0-4391-a35c-1989c07c0b67",
-                "node_type": "cloud",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "interfaces": [
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Wi-Fi",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de red Bluetooth",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "VMware Network Adapter VMnet1",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Conexi\u00f3n de \u00e1rea local 2",
-                            "special": false,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "ports_mapping": [
-                        {
-                            "interface": "Conexi\u00f3n de \u00e1rea local",
-                            "name": "Conexi\u00f3n de \u00e1rea local",
-                            "port_number": 0,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Conexi\u00f3n de red Bluetooth",
-                            "name": "Conexi\u00f3n de red Bluetooth",
-                            "port_number": 1,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Conexi\u00f3n de \u00e1rea local 2",
-                            "name": "Conexi\u00f3n de \u00e1rea local 2",
-                            "port_number": 2,
-                            "type": "ethernet"
-                        },
-                        {
-                            "lport": 35000,
-                            "name": "UDP tunnel 1",
-                            "port_number": 3,
-                            "rhost": "10.8.0.5",
-                            "rport": 25000,
-                            "type": "udp"
-                        }
-                    ],
-                    "remote_console_host": "",
-                    "remote_console_http_path": "/",
-                    "remote_console_port": 23,
-                    "remote_console_type": "none"
-                },
-                "symbol": ":/symbols/cloud.svg",
-                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
-                "width": 159,
-                "x": -230,
-                "y": 81,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": 5006,
-                "console_auto_start": false,
-                "console_type": "telnet",
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC_Melyza",
-                    "x": -6,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "PC_Melyza",
-                "node_id": "1e8d60ff-07a1-42c4-b0f3-7d8f75b4514d",
-                "node_type": "vpcs",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {},
-                "symbol": ":/symbols/vpcs_guest.svg",
-                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
-                "width": 65,
-                "x": 252,
-                "y": -27,
+                "x": 98,
+                "y": -117,
                 "z": 1
             }
         ]
