@@ -47,7 +47,14 @@ Su configuración final se ve de la siguiente manera, con respectivas etiquetas 
 <img src="/Proyecto1/Imagenes/Top1/topologia1.jpg" alt="drawing">
 &nbsp;
 &nbsp;
-<img src="/Practica1/imagenes/img1.png" alt="drawing">
+Configuración de los Componentes de las topologias:
+
+  1. Configuración de vcps:
+
+
+
+
+
 
 
 
