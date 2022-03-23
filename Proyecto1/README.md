@@ -287,12 +287,12 @@ CLIENTE_3
 </table>
 <br/>
 
-3.Configuracion Servers
+3.Configuracion Server
 <br/>
 <table>
 <tr>
 <td>
-NOMBRE
+PASO
 </td>
 <td>
 CONFIGURACION
@@ -300,7 +300,7 @@ CONFIGURACION
 </tr>  
 <tr>
 <td>
-Server 1
+ 1
 </td>
 <td>
 <img src="/Proyecto1/Imagenes/Top2/Server1.jpg" alt="drawing"> 
@@ -308,7 +308,7 @@ Server 1
 </tr>
 <tr>
 <td>
-Server 2
+ 2
 </td>
 <td>
 <img src="/Proyecto1/Imagenes/Top2/Server2.jpg" alt="drawing"> 
@@ -322,7 +322,7 @@ Server 2
 <table>
 <tr>
 <td>
-NOMBRE
+PASO
 </td>
 <td>
 CONFIGURACION
@@ -330,7 +330,7 @@ CONFIGURACION
 </tr>  
 <tr>
 <td>
-STP 1
+ 1
 </td>
 <td>
 <img src="/Proyecto1/Imagenes/Top2/STP1.jpg" alt="drawing"> 
@@ -338,7 +338,7 @@ STP 1
 </tr>
 <tr>
 <td>
-STP 2
+ 2
 </td>
 <td>
 <img src="/Proyecto1/Imagenes/Top2/STP2.jpg" alt="drawing"> 
@@ -346,7 +346,7 @@ STP 2
 </tr>  
 <tr>
 <td>
-STP 3
+ 3
 </td>
 <td>
 <img src="/Proyecto1/Imagenes/Top2/STP3.jpg" alt="drawing"> 
