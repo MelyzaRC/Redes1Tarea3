@@ -24,23 +24,27 @@ Integrantes:
 
 # Proyecto No.1
 
-# Práctica 1
-
 <div id='indice'/>
 
 ## Contenido
 
-1. [Configuración de *VPCs*](#id1)
-2. [Configuración de nubes](#id2)
-3. [*Ping* entre *hosts*](#id2)
+1. [Configuración de topologia 1](#id1)
+2. [Configuración de topologia 2](#id2)
+3. [Configuracion de topologia 3](#id2)
+> ***Nota:*** ITodo esto se encuentra creado y configurado en un entorno de GNS3 y una Intancia en la nube de AWS. 
 
 <div id='id1'/>
 
-## 1. Configuración de *VPCs*  [ ⇧](#indice)
+## 1. Configuración de Topología 1  [ ⇧](#indice)
 
-Para este apartado se utilizó el componente ***VPC*** integrado nativamente en **GNS3**.
+Componentes:
+  1. Vpcs
+  2. Switch Ethelnet Capa 2
+  3. Cloud
 
-<img src="/Practica1/imagenes/img2.png" alt="drawing">
+Su configuración final se ve de la siguiente manera, con respectivas etiquetas de configuración.
+
+<img src="/Proyecto1/Imagenes/Top1/topologia1.jpg" alt="drawing">
 &nbsp;
 &nbsp;
 <img src="/Practica1/imagenes/img1.png" alt="drawing">
