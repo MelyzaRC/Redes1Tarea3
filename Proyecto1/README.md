@@ -213,7 +213,7 @@ Conexión entre topologías:
 
 Resultado de la topología
 <br/>
-<img src="/Proyecto1/Imagenes/Top2/VPC.jpg" alt="drawing"> 
+<img src="/Proyecto1/Imagenes/Top2/topo2.jpeg" alt="drawing"> 
 <br/>
 
 1.Configuracion VPC
