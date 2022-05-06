@@ -1,15 +1,12 @@
 ><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="drawing" width="75">
->
 >Universidad San Carlos de Guatemala
 >
 >Facultad de Ingeniería 
->
 >Escuela de Ciencias y Sistemas 
->
 >Primer Semestre, 2022
 >
 >Laboratorio de Redes de Computadoras 1 Sección *N Impares*
-
+prueba josue
 ### Grupo No.2
 
 Integrantes:
