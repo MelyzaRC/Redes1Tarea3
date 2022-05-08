@@ -1,102 +1,118 @@
 ><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="drawing" width="75">
->Universidad San Carlos de Guatemala
+>
+> Universidad San Carlos de Guatemala
 >
 >Facultad de Ingeniería 
 >Escuela de Ciencias y Sistemas 
 >Primer Semestre, 2022
 >
 >Laboratorio de Redes de Computadoras 1 Sección *N Impares*
-prueba josue
+
+
+
 ### Grupo No.2
 
 Integrantes:
 
-| Nombre                               | Carnet    | Cliente* | 
-| ------------------------------------ | --------- | -------- |
-| <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6Uyi30Ty2WkMb0ZjuFLoXmkRwrrMObm-X2zztWtGbOgyA-i7mFzuiSKltN14HLAJDVM&usqp=CAU" alt="drawing" width="20"> &nbsp;Jimmy Yorbany Noriega Chávez         | 200915691 |  1       |
-|  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvke8Pr8T6xz52yM8v0ieg0oQy9L9SwfkO4hy4IKoRpxyQBKSGUWto7sWmzj9YYgm1VzU&usqp=CAU" alt="drawing" width="20"> &nbsp; Melyza Alejandra Rodríguez Contreras | 201314821 |  2       |
-| <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6Uyi30Ty2WkMb0ZjuFLoXmkRwrrMObm-X2zztWtGbOgyA-i7mFzuiSKltN14HLAJDVM&usqp=CAU" alt="drawing" width="20"> &nbsp; Romael Isaac Pérez Godinez           | 201213545 |  3       |
-| <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6Uyi30Ty2WkMb0ZjuFLoXmkRwrrMObm-X2zztWtGbOgyA-i7mFzuiSKltN14HLAJDVM&usqp=CAU" alt="drawing" width="20"> &nbsp; Josué Alfredo González Caal          | 201602489 |  4       |
+| Nombre                               | Carnet    |
+| ------------------------------------ | --------- |
+| <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6Uyi30Ty2WkMb0ZjuFLoXmkRwrrMObm-X2zztWtGbOgyA-i7mFzuiSKltN14HLAJDVM&usqp=CAU" alt="drawing" width="20"> &nbsp;Jimmy Yorbany Noriega Chávez         | 200915691 |
+|  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvke8Pr8T6xz52yM8v0ieg0oQy9L9SwfkO4hy4IKoRpxyQBKSGUWto7sWmzj9YYgm1VzU&usqp=CAU" alt="drawing" width="20"> &nbsp; Melyza Alejandra Rodríguez Contreras | 201314821 |
+| <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6Uyi30Ty2WkMb0ZjuFLoXmkRwrrMObm-X2zztWtGbOgyA-i7mFzuiSKltN14HLAJDVM&usqp=CAU" alt="drawing" width="20"> &nbsp; Romael Isaac Pérez Godinez           | 201213545 |
+| <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6Uyi30Ty2WkMb0ZjuFLoXmkRwrrMObm-X2zztWtGbOgyA-i7mFzuiSKltN14HLAJDVM&usqp=CAU" alt="drawing" width="20"> &nbsp; Josué Alfredo González Caal          | 201602489 |
 
-> \* ***Nota:*** El apartado ***Cliente***, en la tabla anterior, identifica a cada miembro del grupo en la sección ***Conexión entre miembros del grupo*** presentada más adelante.
 
-# Tarea No. 3
+
+# PROYECTO 2
 
 <div id='content'/>
 
-## Contenido
+## CONTENIDO
 
-1. [Configuración de la red privada](#id1)
-2. [Conexión entre miembros del grupo](#id2)
-3. [Configuración de _openVPN_ ](#id3)
+1. [Descripcion](#id1)
+2. [Red fisica](#id2)
+3. [Topologia 1](#id3)
 4. [Grupo IAM](#id4)
 5. [Máquina Virtual](#id5)
 
 <div id='id1'/>
 
-## 1. Configuración de la red privada  [ ⇧](#content)
+## 1. Descripcion  [ ⇧](#content)
+<div class=''text-justify''>
+La empresa “Libros Real S.A”, nos ha contratado para la siguiente configuración que les servirá para organizar de manera segura y eficiente los diferentes departamentos con los que cuenta la empresa, en dos distintos lugares de trabajo; uno de esos lugares es el centro de datos y el otro es la oficina central la cual está próxima a inaugurarse.
 
-Configuración de red ***VPN*** en instancia de máquina virtual.
+Para este caso el centro de datos consta con 4 servidores, el servidor web de ventas, de contabilidad, de recursos humanos e informática, los cuales se encuentran
+en subredes diferentes como se muestra en la topología del centro de datos.
 
-Comandos utilizados: 
+La empresa quiere implementar una topología de red para comunicarse desde la
+oficina central con el centro de datos.
 
-```sh
-sudo wget https://cubaelectronica.com/OpenVPN/openvpn-install.sh
+Los administradores, la base de datos y los servidores web deben de estar en
+VLAN diferentes cada uno.
 
-sudo bash openvpn-install.sh
-```
-- Configuración de ***IP***.
+Se debe de proveer la siguiente configuración en la red para cumplir con las
+expectativas y requerimientos que la empresa necesita:
 
-![ConfiguracionVPN](/images/config1.jpg "Configuración IP")
+- Garantizar que el servidor de contabilidad sea solo accedido por usuarios del departamento de contabilidad y el servidor de recursos humanos sea solo accedido por usuarios del departamento de recursos humanos.
 
-- Configuración de puerto y protocolo.
+- Garantizar que el servidor web de e-commerce sea accedido solo por los usuarios de ventas.
 
-![ConfiguracionVPN](/images/config2.jpg "Configuración Puerto y Protocolo")
+- Garantizar que el servidor de informática sea accedido únicamente por usuarios del departamento de desarrollo.
 
-- Configuración de ***DNS***.
-
-![ConfiguracionVPN](/images/config3.jpg "Configuración DNS")
-
-- Generación de archivos ***.ovpn*** para conexión con clientes.
-
-![ConfiguracionVPN](/images/config4.jpg "Generación de archivos OVPN")
-
+- Garantizar la comunicación de los administradores con todos los servidores web.
+ </div>
 <div id='id2'/>
 
-## 2. Conexión entre miembros del grupo [ ⇧](#content)
+## 2. Red fisica [ ⇧](#content)
+Para el Proyecto 2, nos hemos apoyado de las herramientas:
 
-Conexión de cada uno de los miembros del equipo con el resto de integrantes. 
+<p align="center">
+  <img src="/Proyecto2/imagenes/log_gcp.png" alt="drawing" width="200"> <img src="/Proyecto2/imagenes/logo_gns3.png" alt="drawing" width="200"> <img src="https://es.vpnmentor.com/wp-content/uploads/2017/08/Openvpn20Logo.png" alt="drawing" width="200"> 
+</p>
 
-### Cliente 1
+
+
+
+Para darle solucion a este problema, conectaron 3 computadoras fisicas por medio de la VPN formando una pequeña red donde estas tienen conexión y acceso a propiedades de red tradicionales como archivos compartidos, y muchas cosas mas por defecto. A continuacion se muestra el grafico que describe nuestra Red Fisica:
+
+<p align="center">
+  <img src="/Proyecto2/imagenes/redfisica.png" alt="drawing" width="600">
+</p>
+ 
+## 3. Topologia 1  [ ⇧](#content)
+-Se realizo el cálculo de subredes de la red 10.2.0.0/16, y se obtuvieron las subredes necesarias para conectar toda la red.
+- Se asignaron las direcciones IP a cada uno de los router.
+- Se configuraron las rutas estáticas necesarias en los routers para que sea posible establecer la comunicación del centro de datos y la oficina central.
+- Se configuro el protocolo de redundancia GLBP.
+- Se configuro protocolo de redundancia HSRP.
+
+### Red WAN (Interconexión de centro de datos y oficina central)
 ```sh
-IP: 10.8.0.2
+Imagen descriptiva de la Topologia
 ```
-![Client1IP](/images/ipJimmy.jpg "Client1 IP")
+<p align="center">
+  <img src="/Proyecto2/imagenes/topologia1/topologia1.jpg" alt="drawing">
+</p>
 
-![Client1Ping](/images/pingJimmy.jpg "Client1 Ping")
-
-### Cliente 2
 ```sh
-IP: 10.8.0.3
+Para esta red se realizo el calculo FLSM que se describe en la siguiente tabla: 
 ```
-![Client2IP](/images/melyza4.png "Client2 IP")
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia1/tablaFLSM.jpg" alt="drawing" width="620" height="400">
+</p>
 
-![Client2Ping](/images/melyza1.png "Client1 Ping")
-
-![Client2Ping](/images/melyza2.png "Client1 Ping")
-
-![Client2Ping](/images/melyza3.png "Client1 Ping")
-
-### Cliente 3
 ```sh
-IP: 10.8.0.4
+CONFIGURACIONES
 ```
-
-### Cliente 4
-```sh
-IP: 10.8.0.5
-```
-![Client4IP](/images/201602489JosueGonzalezpingvpn.png "Client4 IP")
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia1/router1.jpg" alt="drawing" width="600" height="400">
+  
+  <img src="/Proyecto2/imagenes/topologia1/router3.jpg" alt="drawing" width="600" height="400">
+  
+  <img src="/Proyecto2/imagenes/topologia1/router2.jpg" alt="drawing" width="600" height="400">
+  
+  <img src="/Proyecto2/imagenes/topologia1/router4.jpg" alt="drawing" width="600" height="400">
+</p>
 
 <div id='id3'/>
 
@@ -108,36 +124,6 @@ IP: 10.8.0.5
 https://openvpn.net/vpn-client/
 ```
 
-![InstalacionOpenVPN](/images/open1.png "Descarga openVPN")
-
-![InstalacionOpenVPN](/images/open2.png "Archivo openVPN")
-
-- Ejecución del asistente de instalación
-
-![InstalacionOpenVPN](/images/open3.png "Asistente")
-
-![InstalacionOpenVPN](/images/open4.png "Asistente")
-
-![InstalacionOpenVPN](/images/open5.png "Asistente")
-
-![InstalacionOpenVPN](/images/open6.png "Asistente")
-
-![InstalacionOpenVPN](/images/open7.png "Asistente")
-
-
-- Ejecución del software instalado
-
-![InstalacionOpenVPN](/images/open8.png "Ejecución")
-
-- Conexión a servidor por medio de archivo generado
-
-![InstalacionOpenVPN](/images/open9.png "Conexión")
-
-![InstalacionOpenVPN](/images/open11.png "Conexión")
-
-![InstalacionOpenVPN](/images/open10.png "Conexión")
-
-![InstalacionOpenVPN](/images/open12.png "Conexión")
 
 > \* ***Nota:*** El firewall debe estar desactivado para poder llevar a cabo la comunicación.
 > 
@@ -158,11 +144,6 @@ Creación de instancia de máquina virtual en ***Google Cloud Platform***
 
 ![Virtual](/images/mv1.png "Maquina Virtual")
 
-![Virtual](/images/mv2.png "Maquina Virtual")
-
-![Virtual](/images/mv3.png "Maquina Virtual")
-
-![Virtual](/images/instanciaVM.jpg "Maquina Virtual")
 
 Resumen de características:
 |Característica|Valor|
