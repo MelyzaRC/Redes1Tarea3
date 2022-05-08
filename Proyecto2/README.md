@@ -23,21 +23,23 @@ Integrantes:
 
 
 
-# PROYECTO 2
+ <h1 align="center" > PROYECTO 2</h1>
+
+
 
 <div id='content'/>
 
 ## CONTENIDO
 
-1. [Descripcion](#id1)
-2. [Red fisica](#id2)
-3. [Topologia 1](#id3)
-4. [Grupo IAM](#id4)
-5. [Máquina Virtual](#id5)
+1. [DESCRIPCION](#id1)
+2. [RED FISICA](#id2)
+3. [TOPOLOGIA 1](#id3)
+4. [TOPOLOGIA 2](#id4)
+5. [TOPOLOGIA 3](#id5)
 
 <div id='id1'/>
 
-## 1. Descripcion  [ ⇧](#content)
+## 1. DESCRIPCION  [ ⇧](#content)
 <div class=''text-justify''>
 La empresa “Libros Real S.A”, nos ha contratado para la siguiente configuración que les servirá para organizar de manera segura y eficiente los diferentes departamentos con los que cuenta la empresa, en dos distintos lugares de trabajo; uno de esos lugares es el centro de datos y el otro es la oficina central la cual está próxima a inaugurarse.
 
@@ -63,7 +65,7 @@ expectativas y requerimientos que la empresa necesita:
  </div>
 <div id='id2'/>
 
-## 2. Red fisica [ ⇧](#content)
+## 2. RED FISICA [ ⇧](#content)
 Para el Proyecto 2, nos hemos apoyado de las herramientas:
 
 <p align="center">
@@ -78,8 +80,10 @@ Para darle solucion a este problema, conectaron 3 computadoras fisicas por medio
 <p align="center">
   <img src="/Proyecto2/imagenes/redfisica.png" alt="drawing" width="600">
 </p>
- 
-## 3. Topologia 1  [ ⇧](#content)
+
+<div id='id3'/>
+
+## 3. TOPOLOGIA 1  [ ⇧](#content)
 -Se realizo el cálculo de subredes de la red 10.2.0.0/16, y se obtuvieron las subredes necesarias para conectar toda la red.
 - Se asignaron las direcciones IP a cada uno de los router.
 - Se configuraron las rutas estáticas necesarias en los routers para que sea posible establecer la comunicación del centro de datos y la oficina central.
@@ -88,7 +92,7 @@ Para darle solucion a este problema, conectaron 3 computadoras fisicas por medio
 
 ### Red WAN (Interconexión de centro de datos y oficina central)
 ```sh
-Imagen descriptiva de la Topologia
+Imagen descriptiva de la Topologia 1
 ```
 <p align="center">
   <img src="/Proyecto2/imagenes/topologia1/topologia1.jpg" alt="drawing">
@@ -114,31 +118,134 @@ CONFIGURACIONES
   <img src="/Proyecto2/imagenes/topologia1/router4.jpg" alt="drawing" width="600" height="400">
 </p>
 
-<div id='id3'/>
-
-## 3. Configuración de _openVPN_  [ ⇧](#content)
-
-- Descarga de software ***openVPN*** desde su sitio oficial.
-
-```sh
-https://openvpn.net/vpn-client/
-```
-
-
-> \* ***Nota:*** El firewall debe estar desactivado para poder llevar a cabo la comunicación.
-> 
-> ![Firewall](/images/firewall.png "Firewall")
 
 <div id='id4'/>
 
-## 4. Grupo IAM [ ⇧](#content)
+## 4. TOPOLOGIA 2  [ ⇧](#content)
+
+### Oficina Central
+
+Dentro de la oficina central se encuentran cuatro departamentos:
+  - Recursos Humanos
+  - Contabilidad
+  - Ventas
+  - Bases de datos.
+
+
+El departamento de recursos humanos cuenta con: 
+  - 1 Gerente
+  - 15 Reclutadores
+  - 5 Analistas de recursos humanos.
+
+
+El departamento de contabilidad es el más pequeño y actualmente cuenta con:
+  - 1 Gerente
+  - 5 asistentes de contabilidad 
+  - 1 contador en general 
+  - 1 auditor
+
+El departamento ventas es el departamento más grande, la empresa prevé un crecimiento de hasta un 32%, cuenta con:
+  - 76 Operadores de ventas
+  - 4 Encargados de cuentas
+  - 12 Managers
+  - 1 gerente
+
+  
+En el departamento de informática se prevee un crecimiento hasta un 18% por lo que se considero el crecimiento de la Red, cuenta con:
+  - 15 Programadores
+  - 5 Gestores de proyectos
+  - 1 Administrador de la base de datos
+  - 3 Analistas de infraestructura
+  - 6 Testers
+  - 1 Gerente
+
+
+```sh
+Imagen descriptiva de la Topologia 2
+```
+<p align="center">
+  <img src="/Proyecto2/imagenes/topologia2/topologia.jpg" alt="drawing">
+</p>
+
+```sh
+Para esta red se realizo el calculo VLSM que se describe en la siguiente tabla: 
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/subredesVLSM.jpg" alt="drawing">
+</p>
+
+```sh
+CONFIGURACIONES
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/InterfacesAcces1.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/interfacesAccess2.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/interfacesTrunk.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/interVLAN.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/pcContaVlan20.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/pcInforVlan40.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/pcRRHHVlan10.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/pcVentasVlan30.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/vlans.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/TablaRuteo1.jpg" alt="drawing" width="600" height="400">
+</p>
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/TablaRuteo2.jpg" alt="drawing" width="600" height="400">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia2/.jpg" alt="drawing" width="600" height="400">
+</p>
+
+
+
+<div id='id5'/>
+
+##  TOPOLOGIA3 [ ⇧](#content)
 Grupo de ***IAM*** con todos los miembros del grupo.
 
 ![GrupoIAM](/images/iam.jpg "Grupo IAM")
 
-<div id='id5'/>
 
-## 5. Máquina virtual [ ⇧](#content)
+## Máquina virtual [ ⇧](#content)
 
 Creación de instancia de máquina virtual en ***Google Cloud Platform***
 
