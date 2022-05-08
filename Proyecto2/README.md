@@ -84,7 +84,7 @@ Para darle solucion a este problema, conectaron 3 computadoras fisicas por medio
 <div id='id3'/>
 
 ## 3. TOPOLOGIA 1  [ ⇧](#content)
--Se realizo el cálculo de subredes de la red 10.2.0.0/16, y se obtuvieron las subredes necesarias para conectar toda la red.
+Se realizo el cálculo de subredes de la red 10.2.0.0/16, y se obtuvieron las subredes necesarias para conectar toda la red.
 - Se asignaron las direcciones IP a cada uno de los router.
 - Se configuraron las rutas estáticas necesarias en los routers para que sea posible establecer la comunicación del centro de datos y la oficina central.
 - Se configuro el protocolo de redundancia GLBP.
@@ -167,6 +167,7 @@ Imagen descriptiva de la Topologia 2
   <img src="/Proyecto2/imagenes/topologia2/topologia.jpg" alt="drawing">
 </p>
 
+
 ```sh
 Para esta red se realizo el calculo VLSM que se describe en la siguiente tabla: 
 ```
@@ -174,8 +175,9 @@ Para esta red se realizo el calculo VLSM que se describe en la siguiente tabla:
   <img src="/Proyecto2/imagenes/topologia2/subredesVLSM.jpg" alt="drawing">
 </p>
 
+
 ```sh
-CONFIGURACIONES
+CONFIGURACION DE INTERFACES EN LOS SWITCH
 ```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/InterfacesAcces1.jpg" alt="drawing" width="600" height="400">
@@ -185,38 +187,74 @@ CONFIGURACIONES
   <img src="/Proyecto2/imagenes/topologia2/interfacesAccess2.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+INTERFACE TRONCAL
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/interfacesTrunk.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+INTERVLAN
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/interVLAN.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+VLAN20: CONTABILIDAD
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/pcContaVlan20.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+VLAN40: INFORMATICA
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/pcInforVlan40.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+VLAN10: RECURSOS HUMANOS
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/pcRRHHVlan10.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+VLAN30: VENTAS
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/pcVentasVlan30.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+TODAS LAS VLANS
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/vlans.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+TABLA DE RUTEO 1
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/TablaRuteo1.jpg" alt="drawing" width="600" height="400">
 </p>
 
+
+```sh
+TABLA DE RUTEO 2
+```
 <p align="left">
   <img src="/Proyecto2/imagenes/topologia2/TablaRuteo2.jpg" alt="drawing" width="600" height="400">
 </p>
@@ -225,46 +263,93 @@ CONFIGURACIONES
 
 
 
+<div id='id5'/>
+
+##  TOPOLOGIA3 [ ⇧](#content)
 
 
+### Centro de Datos
+Para esta topologia ise utilizo la red 192.168.25.0/24 la cual se administro en subredes para los departamentos que se mensionaron anteriormente.
 
 
+ 
+  - Se crearon las VLANs correspondientes para realizar la configuración de los puertos, asignando el modo y VLAN correspondientes.
+  - Se configuraron las rutas estáticas necesarias en R1 para que sea posible establecer comunicación entre el centro de datos y la oficina central
 
 
+```sh
+Imagen descriptiva de la Topologia 2
+```
+<p align="center">
+  <img src="/Proyecto2/imagenes/topologia3/_topologia3.png" alt="drawing">
+</p>
+
+
+```sh
+Para esta red se realizo el calculo que se describe a continuacion: 
+192.168.25.0/24
+```
 <p align="left">
-  <img src="/Proyecto2/imagenes/topologia2/.jpg" alt="drawing" width="600" height="400">
+  <img src="/Proyecto2/imagenes/topologia3/calculos.png" alt="drawing">
+</p>
+
+```sh
+ACCESS
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/access.png" alt="drawing">
+</p>
+
+
+```sh
+VLANs
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/vlan.png" alt="drawing">
+</p>
+
+
+```sh
+INTERVLANs
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/intervlan.png" alt="drawing">
 </p>
 
 
 
-<div id='id5'/>
-
-##  TOPOLOGIA3 [ ⇧](#content)
-Grupo de ***IAM*** con todos los miembros del grupo.
-
-![GrupoIAM](/images/iam.jpg "Grupo IAM")
-
-
-## Máquina virtual [ ⇧](#content)
-
-Creación de instancia de máquina virtual en ***Google Cloud Platform***
-
-![Virtual](/images/mv1.png "Maquina Virtual")
+```sh
+RUTAS
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/rutas.png" alt="drawing">
+</p>
 
 
-Resumen de características:
-|Característica|Valor|
-|--|--|
-|**Plataforma**| <img src="https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png?hl=es-es" alt="drawing" width="150"><br>Google Cloud Platform |
-|**Tipo de instancia**|e2-small|
-|**Sistema operativo**|<img src="https://anthoncode.com/wp-content/uploads/2019/01/ubuntu-logo-png.png" alt="drawing" width="135"><br>Ubuntu|
-|**Versión**| 18.04 LTS|
-|**Espacio en disco**| 10 GB|
-|**Memoria RAM**| 2 GB|
+```sh
+VPC1
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/vpc1.png" alt="drawing">
+</p>
 
-> Adicionalmente se crearon dos reglas de ***firewall***, una de entrada y una de salida como se observa a continuación.
-> 
-> **Regla de entrada:**
-> ![FirewallRules](/images/firewallvmin.png "Regla de Firewall - Entrada")
-> **Regla de salida:**
-> ![FirewallRules](/images/firewallvmout.png "Regla de Firewall - Salida")
+```sh
+VPC2
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/vpc2.png" alt="drawing">
+</p>
+
+```sh
+VPC3
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/vpc3.png" alt="drawing">
+</p>
+
+```sh
+VPC4
+```
+<p align="left">
+  <img src="/Proyecto2/imagenes/topologia3/vpc4.png" alt="drawing">
+</p>
